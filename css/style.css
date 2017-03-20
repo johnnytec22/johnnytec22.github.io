@@ -1,0 +1,504 @@
+
+/*styling for the sliders*/
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+.carousel-inner .prev        { left: -33%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
+.carousel-inner > .item > img{
+      width: 80%;
+      margin: auto;
+  }
+
+
+#myCarousel , .carousel{
+    padding: 0;
+    margin: 0;
+    background: white;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 100px;
+    top: -230px;
+}
+.carousel-caption h1 {
+    color: black;
+    font-family: Comfortaa, sans-serif;
+}
+
+@media (max-width: 1300px){
+    .carousel-caption h1 {
+    color: black;
+    font-size: 30px;
+    font-family: Comfortaa, sans-serif;
+}.carousel-caption {
+    position: relative;
+    left: 85px;
+    top: -200px;
+}
+
+
+}
+.carousel-caption p {
+    font-family: Sofia, fantasy;
+    font-size: 20px;
+}
+
+
+
+/*styling the drop down manu*/
+.dropbtn {
+    background-color: orangered;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 27px;
+    border-radius: 3px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 170px;
+    box-shadow: 4px 8px 16px 3px rgba(0,0,0,0.2);
+    z-index: 12;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    font-size: 12px;
+    color: darkgray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Comfortaa, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: limegreen;
+    color: white;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: limegreen;
+}
+
+/*general*/
+body, ul, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+#mobile_product .img-responsive {
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+@font-face {
+    font-family: Sofia;
+    src: url('../fonts/Sofia-Regular.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url('../fonts/Comfortaa-Light.ttf');
+}
+
+@font-face {
+    font-family: Tangerine;
+    src: url('../fonts/Tangerine_Bold.ttf');
+}
+
+@font-face {
+    font-family: ExpletusSans;
+    src: url('../font/ExpletusSans-Regular.ttf')
+}
+
+
+
+/*styling the header*/
+header {
+    width: 100%;
+    position: fixed;
+    min-height: 71px;
+    z-index: 100;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+header #logo {
+    margin: 5px;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    float: left;
+}
+
+
+header .dropdown {
+    margin: 20px 20px auto auto;
+    float: right;
+}
+/*header ends*/
+
+/*styling the show case*/
+main #showcase {
+    border: 1px solid transparent;
+    text-align: center;
+    width: 100%;
+    height: 895px;
+    color: white;
+    background: url("../images/bitmap1.png") no-repeat;
+    background-position: center;
+    background-size: auto auto;
+}
+
+main #showcase h1#yourz {
+    font-family: Tangerine;
+    font-size: 100px;
+}
+
+main #showcase h1#place {
+    margin-top: 400px;
+    font-size: 15px;
+    font-family: Comfortaa, cursive;
+}
+
+main #social_navs {
+    position: relative;
+    top: -400px;
+    right: 1%;
+    width: 350px;
+    float: right;
+    transform: rotate(-90deg);
+    transform-origin: right bottom 0;
+}
+
+@media (min-width: 1200px){
+    main #social_navs {
+        position: relative;
+        top: -400px;
+        right: 10%;
+    }
+}
+@media (max-width: 600px){
+    main #social_navs {
+        position: relative;
+        top: -500px;
+    }
+
+    main #social_navs a {
+        margin: 5px;
+        font-size: 8px;
+        text-transform: lowercase;
+    }
+}
+
+
+main #social_navs a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-family: Comfortaa, Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+/*STYLING products section*/
+.products #myCarousel {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.products{
+    height: 600px;
+    width: 100%;
+    margin-top: 160px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 100px;
+}
+
+#desktop_products h2 {
+    text-align: center;
+    font-family:Comfortaa, cursive;
+    margin-bottom: 50px;
+}
+
+/*Styling connect with friends section*/
+#connect {
+    margin-top: 0;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 150px;
+    background: url('../images/Connect with friends.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+@media (max-width: 1200px) {
+    #connect {
+        background-position: 8%;
+    }
+}
+
+@media (max-width: 500px){
+    #connect {
+        background-position: 12%;
+    }
+}
+
+
+@media (max-width: @screen-sm){
+    #connect {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: @screen-xs){
+    #connect {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.wrap {
+    text-align:center;
+    position:relative;
+}
+
+#connect #connect_text {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}    
+
+#connect #connect_text h1{
+    font-family: Comfortaa, cursive;
+    font-size: 45px;
+    color: ghostwhite;
+}
+
+#connect #connect_text p {
+    font-family: Comfortaa, cursive;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    #connect #connect_text h1 {
+        font-size: 35px;
+    }
+}
+
+/*styling store location */
+#store_location {
+    margin-top: 40px;
+    background: url('../images/location.png') no-repeat;
+    background-size: auto 100%;
+    height: 700px;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#store_location #address {
+    position: relative;
+    top: -15px;
+    left: -82px;
+    height: 500px;
+
+}
+
+#store_location #address img {
+    height: 480px;
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: -70px;
+}
+
+#store_location #address p {
+    width: 100px;
+    position: relative;
+    left: 170px;
+    top: -253px;
+    font-family: Sofia, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+#store_location h1 {
+    width: 300px;
+    position: relative;
+    left: 30%;
+    top: -400px;
+    font-size: 40px;
+    font-family: Comfortaa, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+#store_images img {
+    border-radius: 3px;
+    position: relative;
+    top: -250px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 400px){
+    #store_location h1 {
+        position: relative;
+        left: 35px;
+    }
+
+    #store_images img {
+        width: 230px;
+        height: 170px;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+footer nav {
+    position: relative;
+    top: -80px;
+    padding: 0;
+    margin-top: 30px;
+    width: 80%;
+    display: inline-block;
+}
+
+footer nav a {
+    border:none;
+    margin-top: 5px;
+    background: transparent;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Comfortaa, cursive;
+    font-size: 16px;
+    color: rgba(0,0,0,0.65);
+}
+footer nav a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    background: limegreen;
+    border: none;
+    box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+footer img{
+    width: 140px;
+    height: 100px;
+    position: relative;
+    top: -70px;
+}
+
+footer p {
+    font-family: Comfortaa;
+    font-size: 14px;
+}
+
+/*MOBILE OPTIMIZATIO*/
+#products #mobile_products {
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.prod {
+    height: 400px;
+    margin-bottom: 40px;
+    background: white;
+    box-shadow: 2px 4px 8px 3px rgba(0,0,0,0.2);
+}
+
+
+
+#mobile_products h2 {
+    margin-bottom: 50px;
+    font-family: Comfortaa, cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prod img {
+    height: 400px;
+    width: 450px;
+}
+
+#products #mobile_products .prod_text {
+    position: relative;
+    font-family: Comfortaa, cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    top: -200px;
+    left: 100px;
+}
+
+@media (max-width: 620px){
+    .prod img {
+        height: 350px;
+        width: 380px;
+    }
+}
+
+@media (max-width: 430px){
+    .prod img {
+        height: 260px;
+        width: 250px;
+        position: relative;
+        top: 0;
+        left: -20px;
+    }
+
+    #products #mobile_products .prod_text {
+        position: relative;
+        top: -80px;
+        left: 0px;
+    }
+
+
+
+}
+
+
+
+ 
+
+
